@@ -1,0 +1,10 @@
+<import src="/page/common/moviecard.wxml" />
+<import src="/page/common/searchbtn.wxml" />
+<view class="container">
+	<template is="searchBtn"></template>
+	<view class="movielist">
+	<block wx:for="{{movie_subjects.subjects}}">
+			<template is="movieListCommon" data="{{imgUrl:item.medium,movieName:item.title,starScore:item.average,id:item.id}}"></template>		
+	</block>
+</view>
+</view>

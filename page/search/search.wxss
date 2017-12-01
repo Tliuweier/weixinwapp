@@ -1,0 +1,59 @@
+.searchBtn{
+	display: flex;
+	background-color: #44BB57;
+	width: 100%;
+	height: 56rpx;
+	padding: 10rpx;
+}
+.searchInput{
+	display: flex;
+	background-color: white;
+	width: 86%;
+	border-radius: 5px;
+	flex-direction: row;
+}
+.searchInput icon{
+	margin: auto 0;
+	color: #B4B4B4;
+	padding: 10rpx;
+}
+.searchInput input{
+	width: 100%;
+}
+.searchBtn text{
+	padding: 5rpx;
+	margin-left: 15rpx;
+	color: white;
+	justify-content: center;
+	font-size: 26rpx;
+}
+.movielist{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color:#FFFFFF;
+	border-radius: 9rpx;
+	margin: 0rpx;
+	padding: 10rpx;
+
+}
+.poster{
+	width: 80rpx;
+	height: 140rpx;
+}
+.text-box{
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 100;
+	margin-left: 10rpx;
+	
+}
+.info{
+	font-size: 40rpx;
+
+}
+.lable{
+	padding: 10rpx;
+	font-size: 30rpx;
+	color: #888;
+}

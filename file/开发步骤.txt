@@ -1,0 +1,55 @@
+开发小程序的步骤：
+
+## 对项目进行配置
+	在app.json进行配置 
+
+## 规划整个程序的所有页面，并做配置
+	board,item,list,search 页面
+	在pages/下创建每一个页面，每个页面都是一个文件夹包含3个文件JS WXML WXSS
+	添加到app.json中的Page中
+
+	pages 中的第一项会作为首页
+	在对应的js文件中
+		const app = getApp();//获取应用程序
+		Page({})
+
+## 完成榜单页面
+	<view class="board">
+		<view class="board-item">
+			<text>正在热映</text>
+			<image src='../../images/arrowright.png' mode="aspectfill"/>
+			<text>即将上映</text>
+			<img src='../../images/arrowright.png' mode="aspectfill"/>
+			<text>TOP250</text>
+			<img src='../../images/arrowright.png' mode="aspectfill"/>
+			<text>北美票房榜</text>
+			<img src='../../images/arrowright.png' mode="aspectfill"/>
+		</view>
+	</view>
+	使用高亮css的cursor: pointer;
+列表页面
+
+
+详细页面
+
+
+## 页面与页面之间跳转
+	使用组件中navigator的url
+	页面的传值：类似于web开发的方式 问号参数
+	跳转到的页面通过onLoad方法的参数拿到
+	区别跳转的页面url="../list/list?type=in_tea
+
+
+
+
+
+
+引用模块,样式可能没有，同样在当前样式文件中引用样式文件
+
+
+
+
+
+
+商品列表
+商品信息详情

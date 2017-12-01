@@ -1,0 +1,194 @@
+.post{
+	padding-bottom: 150rpx;
+}
+.backcolor{
+	margin-top: 30rpx;
+	background-color: #FFFFFF;
+}
+/*head*/
+.storetitle{
+	width: 100%;
+	height: 40rpx;
+	border-bottom: 1.5px solid lightgray;
+	padding: 10rpx;
+	display: flex;
+	flex-direction: row;
+}
+.storetitle checkbox{
+	margin-top: 10rpx;
+	margin-left: 10rpx;
+}
+.storetitle .os{
+	margin-left: 15rpx;
+}
+/*goods-box*/
+
+.goods-box{
+	display: flex;
+	flex-direction: column;
+}
+.goods-box .dicount{
+	display: flex;
+}
+.goods-box .dicount .dicountleft{
+	flex: 1;
+	padding: 15rpx;
+}
+.goods-box .dicount .dicountright{
+	padding: 15rpx;
+}
+.goods-box .goods{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.goods-box .goods .goodsdetails{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.goods-box .goods checkbox{
+	margin:0 30rpx;
+}
+.goods-box .goods .goodsdetails image{
+	width: 200rpx;
+	height: 230rpx;
+	padding: 10rpx;
+}
+.goods-box .goods .goodsdetails .goodstitle{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20rpx;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+}
+.goods-box .goods .goodsdetails .goodstitle .goodsname{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 450rpx;
+	font-size: 35rpx;
+	color: #333333;
+
+}
+.goods-box .goods .goodsdetails .goodstitle .standard{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 350rpx;
+	color: #B4B4B4;
+	font-size: 24rpx;
+	margin-top: -34rpx;
+	/*height: 70rpx;*/
+	/*margin-left: 20rpx;*/
+}
+.goods-box .goods .goodsdetails .price{
+	display: flex;
+	flex-direction: row;
+}
+.goods-box .goods .goodsdetails .price .os{
+	flex: 1;
+}
+.goods-box .goods .goodsdetails .price .number{
+	display: flex;
+	flex-direction: row;
+	width: 80px;
+	height: 26px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-right: 10rpx;
+	/*border:1px solid lightgray;*/
+	
+}
+.goods-box .goods .goodsdetails .price .number .minus{
+	width: 19px;
+	line-height: 26px;
+	text-align: center;
+	float: left;
+	color: #ccc;
+}
+.goods-box .goods .goodsdetails .price .number .add{
+	width: 19px;
+	line-height: 26px;
+	text-align: center;
+	float: left;
+}
+.goods-box .goods .goodsdetails .price .number input{
+	width: 40px;
+	height: 26px;
+	float: left;
+	margin:0 auto;
+	text-align: center;
+	font-size: 12px;
+	border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}
+
+
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 130rpx;
+	background: #fff;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	border-top: 1.5px solid lightgray;
+	/*flex:1;*/
+}
+.footer .settlement{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1;
+}
+.footer .settlement .checkboxitem{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	padding: 25rpx;
+}
+.footer .settlement .checkboxitem checkbox{
+	margin: 5rpx;
+}
+.footer .settlement .checkboxitem .checktitle{
+	margin: 0rpx -15rpx;
+}
+checkbox{
+	zoom: 50%;
+}
+.footer .settlement .priceandbtn{
+	/*left: 50%;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 140rpx;
+}
+.footer .settlement .priceandbtn .btn{
+	/*border-left: 1.5px solid lightgray;*/
+	/*height: 70px;*/
+	/*text-align: center;*/
+	color: #fff;
+	height: 140rpx;
+	font-size: 45rpx;
+	background-color:#E93D3B;
+	/*text-align: center;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*padding: 3rpx;*/
+
+}
+.footer .settlement .priceandbtn .btn .os{
+	/*margin-top: 20rpx;*/
+	/*text-align: center;*/
+	margin: 10rpx;
+	padding: 20rpx;
+}
+/*.footer .settlement .btn{
+	border-left: 0.5px solid lightgray;
+}*/

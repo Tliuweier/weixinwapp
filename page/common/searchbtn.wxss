@@ -1,0 +1,27 @@
+.searchbtn{
+	width: 100%;
+	background-color: #44BB57;
+	padding: 10rpx 0 ;
+	height: 56rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.searchinput{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: white;
+	border-radius: 5px;
+	width: 96%;
+}
+.searchinput icon{
+	margin: auto 0 ;
+	color: #B4B4B4;
+}
+.searchinput text{
+	margin: auto 0 ;
+	margin-left: 10rpx;
+	font-size: 28rpx;
+	color: #B4B4B4;
+}

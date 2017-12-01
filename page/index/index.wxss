@@ -1,0 +1,3 @@
+@import "/page/common/searchbtn.wxss";
+@import "/page/common/movielist.wxss";
+

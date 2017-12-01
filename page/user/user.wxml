@@ -1,0 +1,8 @@
+<view class="container">
+	<view class="userinfo">
+		<!-- <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+
+		<image src="/images/profile.png" bindtap="bindViewTap" class="userinfo-avatar" background-size="cover"></image>
+		<button size="mini" type="primary">登录</button>
+	</view>
+</view>

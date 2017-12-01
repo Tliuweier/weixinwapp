@@ -1,0 +1,21 @@
+@import "/page/common/moviecard.wxss";
+.movieListPanel{
+	margin-bottom: 20rpx;
+	background-color: white;
+}
+.movietitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20rpx;
+}
+.moviemost{
+	font-size: 26rpx;
+	color: #44BB57;
+	margin: auto 0;
+}
+.movieList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}

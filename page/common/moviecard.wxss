@@ -1,0 +1,22 @@
+@import "/page/common/stars.wxss";
+.cardcontainer{
+	display: flex;
+	flex-direction: column;
+	padding: 0 25rpx;
+}
+.cardimg{
+	width: 200rpx;
+	height: 280rpx;
+
+}
+.cardname{
+	font-size: 33rpx;
+	padding-top: 20rpx;
+	font-weight: 500;
+	color: black;
+	/*超出部分的字变省略号 */
+	overflow: hidden;
+	white-space: nowrap; /*使其不换行*/
+	text-overflow:ellipsis;
+	max-width: 160rpx;
+}

@@ -1,0 +1,15 @@
+<import src="/page/common/searchbtn.wxml" />
+<import src="/page/common/movielist.wxml" />
+<view class="container">
+	<loading hidden="{{loading}}">
+	    加载中...
+	</loading>
+	<template is="searchBtn"></template>
+	<!-- <block wx:for="{{boards}}">
+			<template is="movieList" data="{{movietitle:item.name,movieList:in_theaters_subjects}}"/>
+	</block> -->
+	<template is="movieList" data="{{movieList:in_theaters_subjects}}"/>
+	<template is="movieList" data="{{movieList:coming_soon_subjects}}"/>
+	<template is="movieList" data="{{movieList:top250_subjects}}"/>
+	<!-- <template is="movieList" data="{{movietitle:item.name,movieList:us_box_subject}}"/> -->
+</view>

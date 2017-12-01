@@ -1,0 +1,72 @@
+.searchbtn{
+	border-top: 1.5px solid lightgray;
+	border-bottom: 1.5px solid lightgray;
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 140rpx;
+}
+.btnground{
+	display: flex;
+	background-color: #F2F2F2;
+	justify-content: center;
+	align-items: center;
+	width: 86%;
+	border-radius: 50rpx;
+	height: 100rpx;
+}
+.searchbtn .btnground icon{
+	margin-right: 10rpx;
+	color: #B1B1B1;
+}
+.searchbtn .btnground text{
+	margin-left: 15rpx;
+	font-size: 40rpx;
+	color: #8A8A8A;
+}
+.nav_left{
+	/*设置行内块级元素*/
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	background-color: #F8F8F8;
+
+}
+.nav_left .nav_left_items{
+	height: 30PX;
+	font-size: 40rpx;
+	padding: 6px 0;
+}
+.nav_left .nav_left_items.active{
+	background-color: #fff;
+}
+.nav_right{
+	position: absolute;
+	width: 75%;
+	height: 100%;
+	flex: 1;
+	background-color: #fff;
+	box-sizing: border-box;
+	top: 148rpx;
+	left: 25%;
+}
+.nav_right .nav_right_item{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	height: 140px;
+}
+.nav_right .nav_right_item image{
+	width: 50px;
+	height: 100px;
+}
+.nav_right .nav_right_item  text{
+	font-size: 10px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

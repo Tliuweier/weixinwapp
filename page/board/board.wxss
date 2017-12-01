@@ -1,0 +1,254 @@
+.logo{
+	background-color: #E22319;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 270rpx;
+}
+.logo image{
+	margin-top: 20rpx;
+	width: 173px;
+	height: 55px;
+}
+.logo .searchbtn{
+	display: flex;
+	background-color: #E22319;
+	margin-top: 30rpx;
+	height: 80rpx;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10rpx 0;
+}
+.logo .searchbtn .btngourd{
+	width: 86%;
+	display: flex;
+	flex-direction: row;
+	border-radius: 50rpx;
+	background-color: white;
+	justify-content: center;
+}
+.logo .searchbtn icon{
+	/*display: flex;*/
+	margin: auto 0;
+	color: #B4B4B4;
+
+}
+.logo .searchbtn text{
+	margin: auto 0;
+	font-size: 31rpx;
+	margin-left: 10rpx;
+	color: #B4B4B4;
+}
+.btn{
+	background-color: white;
+	display: flex;
+	/*flex-direction: column;*/
+	width: 100%;
+	flex-wrap: wrap;
+
+}
+.btn .grads{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 180rpx;
+	height: 180rpx;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5rpx;
+}
+.btn .grads image{
+	margin-top: 20rpx;
+	width: 40rpx;
+	height:40rpx;
+
+}
+.btn .grads text{
+	font-size: 28rpx;
+	color: #666;
+	padding:10rpx; 
+}
+.goods{
+	margin-top: 30rpx;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	min-height: 100%;
+	flex-direction:column;
+}
+.goods .timestep{
+	display: flex;
+	flex-direction: row;
+}
+.goods .timestep .timestep1{
+	display: flex;
+	flex-direction: column;
+}
+.goods .timestep .timestep1 .timesteptext{
+	margin-left: 46rpx;
+	font-size: 26rpx;
+	color: #B4B4B4;
+}
+.goods .timestep .line{
+	/*width: 100%;*/
+	/*text-align: center;*/
+
+	margin: 16rpx 5rpx 0 5rpx;
+	color: #B4B4B4;
+	height: 1rpx;
+}
+.goods .goodslist{
+	margin: 20rpx;
+	display: flex;
+	flex-direction: row;
+
+	box-shadow: 2px 2px 3px #bbb;
+}
+.goods .logotitle{
+	font-size: 42rpx;
+	color: #B4B4B4;
+}
+.goods image{
+	width: 200rpx;
+	height: 230rpx;
+	margin: 10rpx 30rpx 10rpx 10rpx ;
+}
+.goods .timebtn{
+	border: 0.5px solid lightgray;
+	border-radius: 50rpx;
+	height: 60rpx;
+	text-align: center;
+	/*padding:10rpx;*/
+	width: 200rpx;
+	color: white;
+	font-size: 34rpx;
+	background-color: #F36466;
+	margin-bottom: 10rpx;
+	margin-top: 10rpx;
+}
+.goods .timebtn1{
+	border: 0.5px solid lightgray;
+	border-radius: 50rpx;
+	height: 60rpx;
+	text-align: center;
+	/*padding:10rpx;*/
+	font-size: 34rpx;
+	width: 200rpx;
+	color: white;
+	background-color: #B4B4B4;
+	margin-bottom: 10rpx;
+	margin-top: 10rpx;
+}
+.goods .timebtn text{
+	margin: auto 0;
+}
+.goods .Timeout{
+	margin-top: 10rpx;
+	font-size: 32rpx;
+	color: #B4B4B4;
+}
+.goods .goodsText{
+	margin-top: 10rpx;
+	box-sizing: border-box;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+}
+.goods .goodslist .subscript{
+	font-size: 22rpx;
+	color: #fff;
+	height: 41rpx;
+	width: 104rpx;
+	position: absolute;
+	/*right: 30rpx;*/
+	text-align: center;
+	background: #F36466;
+	transform: rotate(-20deg);
+	border-radius: 10rpx;
+}
+.goods .goodsText .goodstitle{
+	width: 450rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.goods .goodsText .sale{
+	font-size: 28rpx;
+	color: #F36466;
+}
+.goods .goodsText .sale .del{
+	text-decoration:line-through;
+	font-size: 24rpx;
+	color: #B4B4B4;
+	margin-left: 30rpx;
+	/*font-family: 'Microsoft YaHei',STXihei,MingLiu;*/
+}
+.goods .goodsText .sold{
+	font-size: 26rpx;
+	color: #B4B4B4;
+	display: flex;
+	flex-direction: row;
+	/*margin-left: 5rpx;*/
+}
+.goods .goodsText .sold .soldnum{
+	margin-left: 5rpx;
+}
+.goods .goodsText .Tprogress{
+	margin-top: 10rpx;
+	width: 100px;
+	border: 0.5px solid lightgray;
+	border-radius: 20px;
+	height: 10px;
+	margin-left: 10rpx;
+}
+.goods .goodsText .Tprogress .bar{
+	background: #F36466;
+	float: left;
+	border-radius: 20px;
+	height: 100%;
+	text-align: center;
+}
+.goods .goodsText .Tbtn{
+	width: 100px;
+	border-radius: 5px;
+	border: 0.5px solid lightgray;
+	text-align: center;
+	font-size: 32rpx;
+	color: white;
+	background-color: #F36466;
+	margin: 10rpx 0 10rpx 0;
+}
+
+/*.goods .goodslist{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 86%;
+	justify-content: center;
+	border: 1px solid #B4B4B4;
+	height: 100px;
+	margin: auto 0;
+}
+
+.goods .goodslist  image{
+	width: 200rpx;
+	height: 200rpx;
+}
+.goods .goodslist  .goodsText{
+	display: flex;
+	flex-direction: column;
+	/*width: 60%;*/
+/*}
+.goods .goodslist .goodsText .goodstitel{
+	
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+}*/

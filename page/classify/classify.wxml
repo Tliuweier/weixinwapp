@@ -1,0 +1,129 @@
+<view class="contrainer">
+	<view class="searchbtn">
+		<view class="btnground">
+			<icon type="search" size="17" color="#B1B1B1"></icon>
+			<text>搜索京东商品</text>
+		</view>
+	</view>
+
+	<!-- <view class="contentbox">
+		手机HTML
+		左
+		<view class="menu">
+			<view class="menuItem">
+				推荐分类
+			</view>
+			<view class="menuItem">
+				电脑办公
+			</view>
+			<view class="menuItem">
+				家用电器
+			</view>
+		</view>
+
+		右
+		<view class="categoryBox">
+			<view class="categoryContent">
+				<view class="categoryList">
+					<view class="title">推荐分类</view>
+					<view class="categoryItem">
+                    <image class="categoryIcon lazyLoad"></image>
+                    <view class="cursorArea"></view>
+                    <text class="text">琥珀/蜜蜡</text>
+                </view>
+				</view>
+			</view>
+		</view>
+	</view> -->
+	<!-- 微信小程序 -->
+		<!-- 左 -->
+
+		<view class="nav_left">
+			<block wx:for="{{list}}">
+				<view class="nav_left_items {{checkid==item.classifyindex? 'active': ' '}}" catchtap="switchRightTab" 
+					data-id="{{item.classifyindex}}"
+					 data-index="{{index}}">
+				{{item.classifytitle}}
+			</view>
+			</block>
+			<!-- <view class="nav_left_items {{checkin==item.classifyindex? 'active': ' '}}" catchtap="switchRightTab">
+				家用电器
+			</view>
+			<view class="nav_left_items">
+				手机
+			</view>
+			<view class="nav_left_items">
+				电脑办公
+			</view>
+			<view class="nav_left_items">
+				运动户外
+			</view> -->
+		</view>
+		<!-- 右 -->
+		
+		<view class="nav_right">
+			<view wx:if="{{list[Curindex].brand}}">
+				<block wx:for="{{list[Curindex].brand}}">
+					<view class="nav_right_item">
+						<navigator>
+							<view>
+								<image src="{{item.brandimageurl}}"></image>
+							</view>
+							<view>
+								<text>{{item.brandtitle}}</text>
+							</view>
+						</navigator>
+					</view>
+				</block>
+				
+
+
+
+
+
+
+
+
+
+
+
+				<!-- <view class="nav_right_item">
+					<navigator>
+						<view>
+							<image src="/images/note.png"></image>
+						</view>
+						<view>
+							<text>Apple</text>
+						</view>
+					</navigator>
+				</view>
+				<view class="nav_right_item">
+					<navigator>
+						<view>
+							<image src="/images/note.png"></image>
+						</view>
+						<view>
+							<text>Apple</text>
+						</view>
+					</navigator>
+				</view>
+				<view class="nav_right_item">
+					<navigator>
+						<view>
+							<image src="/images/note.png"></image>
+						</view>
+						<view>
+							<text>Apple5464654646</text>
+						</view>
+					</navigator>
+				</view> -->
+			</view>
+		</view>
+
+
+
+
+
+
+
+</view>

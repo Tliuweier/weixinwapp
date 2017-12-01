@@ -1,0 +1,27 @@
+<view class="container">
+	<scroll-view scroll-y="true" >
+  <view class="meta">
+    <image class="poster" src="{{movieitem.images.medium}}" background-size="cover"/>
+    <text class="title">{{movieitem.title}}({{movieitem.year}})</text>
+    <text class="info">评分：{{movieitem.rating.average}}</text>
+    <text class="info">导演：<block wx:for="{{movieitem.directors}}"> {{item.name}} </block></text>
+    <text class="info">主演：<block wx:for="{{movieitem.casts}}"> {{item.name}} </block></text>
+  </view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{movieitem.summary}}</text>
+  </view>
+</scroll-view>
+	<!-- <view class="movieitem">
+		<image ></image>
+		<view class="">
+			<view>正义联盟</view>
+			<view>7.0</view>
+			<view>3颗星</view>
+			<view>多少人评价</view>
+		</view>
+		<view class="">
+			
+		</view>
+	</view> -->
+</view>

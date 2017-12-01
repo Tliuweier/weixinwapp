@@ -1,0 +1,26 @@
+<view class="container">
+	<view class="searchBtn">
+	<view class="searchInput">
+		<icon type="search" size="13" color="#405f80"></icon>
+		<input placeholder="搜索" bindchange="searchtext" />
+		
+	</view>
+	<text catchtap="cancel">取消</text>
+</view>
+
+	<block wx:if="{{movielist.subjects}}">
+		<view class="movielist" wx:for="{{movielist.subjects}}" data-movieid="{{item.id}}" catchtap="ToMovieitem">
+			
+				<image src="{{item.images.small}}" class="poster"></image>
+				<view class="text-box">
+					<text class="info">{{item.title}}</text>
+					<text class="lable">{{item.rating.average}}分/{{item.year}}</text>
+				</view>
+			
+				
+				
+			
+		</view>
+	</block>
+
+</view>

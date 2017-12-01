@@ -1,0 +1,18 @@
+<import src="/page/common/moviecard.wxml" />
+<template name="movieList">
+	<view class="movieListPanel">
+		<view class="movietitle">
+			<text>{{movieList.title}}</text>
+			
+				<text class="moviemost" catchtap="moviemore" data-movieurl="{{movieList.url}}">更多</text>
+			
+
+		</view>
+		<view class="movieList">
+			<block wx:for="{{movieList.subjects}}">
+				<template is="movieListCommon" data="{{imgUrl:item.medium,movieName:item.title,starScore:item.average,id:item.id}}"></template>
+			</block>
+			
+		</view>
+	</view>
+</template>

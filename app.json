@@ -1,0 +1,49 @@
+{
+	"pages":[
+    "page/board/board",
+    
+    "page/index/index",
+    
+    "page/my/my",
+    
+		"page/search/search",
+		"page/shopcart/shopcart",
+		"page/list/list",
+		"page/user/user",
+		
+		"page/classify/classify",
+    "page/moviemore/moviemore",
+    "page/movieitem/movieitem"
+	],
+	"window":{
+    "backgroundColor":"#E22319",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E22319",
+    "navigationBarTitleText": "京东商城",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false,
+    "onReachBottomDistance": 200
+  },
+   "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/board/board",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-actived.png",
+      "text": "首页"
+    },{
+      "pagePath": "page/shopcart/shopcart",
+      "iconPath": "images/my_icon.png",
+      "selectedIconPath": "images/my_active_icon.png",
+      "text": "购物车"
+    }, {
+      "pagePath": "page/my/my",
+      "iconPath": "images/my_icon.png",
+      "selectedIconPath": "images/my_active_icon.png",
+      "text": "我的"
+    }]
+  }
+}

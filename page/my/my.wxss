@@ -1,0 +1,75 @@
+.user-info{
+	background-color: #999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	width: 750rpx;
+    height: 400rpx;
+}
+.user-image{
+	margin: 40rpx;
+	width: 200rpx;
+    height: 217rpx;
+    border-radius: 200rpx;
+}
+.user-nickname{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.user-name{
+	margin-top: 20rpx;
+	font-size: 36rpx;
+	color: #fff;
+}
+.user-sex{
+	margin-left: 20rpx;
+	width: 40rpx;
+    height: 40rpx;
+    border-radius: 60rpx;
+}
+.user-location{
+	margin:20rpx;
+	font-size: 24rpx;
+	color: #fff;
+}
+.user-nickname text{
+	font-size: 40rpx;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+}
+.Tbutton{
+	/*width: 100%;*/
+	display: flex;
+	background-color: white;
+	/*position: relative;*/
+	flex-wrap: wrap;
+}
+.grid{
+	/*position: relative;*/
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+	width: 250rpx;
+	height: 250rpx;
+	/*background-color: #fff;*/
+	/*border: 1 solid black;*/
+}
+.user-icon{
+	margin-bottom: 10rpx;
+	width: 90rpx;
+	height:90rpx;
+	/*background-size: contain;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+}
+.grid text{
+	font-size: 28rpx;
+	color: #666;
+	padding:10rpx;
+}

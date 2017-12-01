@@ -1,0 +1,11 @@
+@import"/page/common/moviecard.wxss";
+@import"/page/common/searchbtn.wxss";
+.movielist{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top:30rpx;
+}
+.container{
+	/*margin: 30rpx 0;*/
+}

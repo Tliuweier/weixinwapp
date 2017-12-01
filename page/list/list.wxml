@@ -1,0 +1,8 @@
+
+<text>{{message}}</text>
+<view>
+	<view wx:for="{{list}}" class="item">
+		<image src="{{item.images.small}}"></image>
+		<text>{{item.title}}</text>
+	</view>
+</view>

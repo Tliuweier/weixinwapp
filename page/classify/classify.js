@@ -1,0 +1,52 @@
+Page({
+	data:{
+		Curindex:0,
+		checkid:1,
+		list:[{
+			classifytitle:'家用电器',
+			classifyindex:'1',
+			brand:[{
+				brandimageurl:'/images/note.png',
+				brandtitle:'Apple',
+				brandindex:'01'
+			},{
+				brandimageurl:'/images/note.png',
+				brandtitle:'华为',
+				brandindex:'02'
+			},{
+				brandimageurl:'/images/note.png',
+				brandtitle:'小米',
+				brandindex:'03'
+			}]
+		},{
+			classifytitle:'手机',
+			classifyindex:'2',
+			brand:[{
+				brandimageurl:'/images/note.png',
+				brandtitle:'炒饭',
+				brandindex:'01'
+			},{
+				brandimageurl:'/images/note.png',
+				brandtitle:'炒面',
+				brandindex:'02'
+			},{
+				brandimageurl:'/images/note.png',
+				brandtitle:'炒粉',
+				brandindex:'03'
+			}]
+		}
+		]
+	},
+	onLoad(){
+		console.log(this.data.list);
+	},
+	switchRightTab(e){
+		
+		const id = e.target.dataset.id;
+		const index = e.target.dataset.index;
+		this.setData({
+			Curindex:index,
+			checkid:id
+		})
+	}
+})

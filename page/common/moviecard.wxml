@@ -1,0 +1,9 @@
+<import src="/page/common/stars.wxml" />
+<template name="movieListCommon">
+	<view class="cardcontainer" data-movieId="{{id}}" catchtap="ToMovieitem">
+		<image class="cardimg"  src="{{imgUrl}}"></image>
+		<text class="cardname">{{movieName}}</text>
+
+		<template is="starscommon" data="{{starScore:starScore}}"></template>
+	</view>	
+</template>
