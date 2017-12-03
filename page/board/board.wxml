@@ -46,7 +46,7 @@
 		<text class="Timeout" wx:if="{{sign}}">{{thours}}:{{tminutes}}:{{tseconds}}</text>
 		<text class="Timeout" wx:if="{{tsign}}">{{tthours}}:{{ttminutes}}:{{ttseconds}}</text>
 		<!-- <text>距本场结束</text> -->
-			<view class="goodslist">
+			<view class="goodslist" catchtap="Todetails">
 				<view class="subscript">限量版</view>
 					<image src="/images/test.jpg"></image>
 					<view class="goodsText">

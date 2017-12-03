@@ -65,7 +65,7 @@
 			<view wx:if="{{list[Curindex].brand}}">
 				<block wx:for="{{list[Curindex].brand}}">
 					<view class="nav_right_item">
-						<navigator>
+						<navigator url="/page/goodslist/goodslist">
 							<view>
 								<image src="{{item.brandimageurl}}"></image>
 							</view>

@@ -1,0 +1,89 @@
+.searchbtn{
+	height: 100rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #E0E0E0;
+	/*position: fixed;*/
+}
+.btnground{
+	display: flex;
+	background-color: #F2F2F2;
+	width: 86%;
+	border-radius: 50rpx;
+	height: 70rpx;
+	flex-direction: row;
+}
+.searchbtn .btnground icon{
+	margin:15rpx 20rpx 0 20rpx;
+
+}
+.searchbtn .btnground text{
+	margin-top: 10rpx;
+}
+
+
+
+.btngroup{
+	/*position: fixed;*/
+	/*top:100rpx;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #E0E0E0;
+}
+.btngroup view{
+	margin-top: 15rpx;
+	width: 25%;
+	height: 70rpx;
+	text-align: center;
+}
+.btngroup view .active{
+	color: #B64D52;
+}
+.goodslist{
+	/*display: flex;*/
+	/*flex-direction: column;*/
+}
+.goodslist .goods{
+	display: flex;
+	flex-direction: row;
+	background-color: #FFFFFF;
+}
+.goodslist .goods .img{
+	width: 100px;
+	height: 120px;
+}
+.goodslist .goods .goodsdetails{
+	display: flex;
+	flex-direction: column;
+	margin-left: 25rpx;
+	border-bottom: 1px solid #E0E0E0;
+}
+.goodslist .goods .goodsdetails .title{
+	/*margin-top: 20rpx;*/
+	/*align-items: center;*/
+	/*display: flex;
+	flex-direction: row;*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 500rpx;
+	margin-bottom: 20rpx;
+
+}
+.goodslist .goods .goodsdetails .colorprice{
+	color:  #EB3937;
+	margin-bottom: 10rpx;
+}
+.goodslist .goods .goodsdetails .colorprice .Price{
+	font-size: 45rpx;
+}
+.goodslist .goods .goodsdetails .evaluate{
+	font-size: 30rpx;
+	color: #c3c3c3;
+}

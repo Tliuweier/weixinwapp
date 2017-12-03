@@ -1,0 +1,111 @@
+<view class="contrainer">
+	<view class="searchbtn">
+		<view class="btnground">
+			<icon type="search" size="17" color="#B1B1B1"></icon>
+			<text>{{text}}</text>
+		</view>
+
+	</view>
+	<view class="btngroup">
+			<view class="grid"><text class="active">综合</text></view>
+			<view class="grid"><text>销量</text></view>
+			<view class="grid"><text>价格</text></view>
+			<view class="grid"><text>筛选</text></view>
+	</view>
+	
+
+
+	<view class="goodslist">
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+
+
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+
+
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+
+		<view class="goods">
+			<image  class="img" src="/images/touxiang.jpg"></image>
+			<view class="goodsdetails">
+				<!-- <view class="title"> -->
+					<text class="title">
+						Apple iPhone 6 32GB 金色 移动联通电信4G手机
+					</text>
+				<!-- </view> -->
+				<text class="colorprice"><text class="Price">￥2499</text>.00</text>
+				<text class="evaluate">276758条评价 95%好评</text>
+			</view>
+		</view>
+
+
+
+
+	</view>
+
+
+
+
+</view>

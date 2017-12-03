@@ -37,6 +37,11 @@ Page({
 		//console.log(new Date("2017-08-12"+" "+"17:30:00"))
 		// if(hour)
 	},
+	Todetails(e){
+		wx.navigateTo({
+			url:'/page/details/details'
+		})
+	},
 	ToClassify(e){
 		console.log(e);
 		wx.navigateTo({

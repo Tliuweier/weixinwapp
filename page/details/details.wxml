@@ -1,0 +1,92 @@
+<view class="contrainer">
+	<view class="boby">
+			<view class="swiper-area">
+		<swiper indicator-dots="#fff" autoplay="true" interval="5000" duration="500">
+		  <block wx:for="{{imgUrls}}">
+		    <swiper-item>
+		      <image class="itemimg" src="{{item}}" class="slide-image"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+	</view>
+	<view class="detail">
+		<text class="title">Apple iPhoneX</text>
+		<text class="price">￥1999.99</text>
+	</view>
+	
+	<view bindtap="viewFlowerArea" class="choose_catalog_area bg_fff display-flex-row">
+	  <view class="fl">选择机型:
+	    64G
+	  </view>
+	  <image class="arrow_right fr" src="/images/more.png"/>
+</view>
+
+
+
+<!-- 隐藏图层 -->
+<view class="commodity_screeen" wx:if="{{status}}"></view>
+<view class="catalog_area display-none bg_fff">
+	<view class="catalog_title">
+		<image class="thumbnails" src="/images/touxiang.jpg"></image>
+		<view class="info_tip">
+			<view>￥199</view>
+			<view>iPhoneX</view>
+		</view>
+		<image class="cancel" src="/images/delete.png"></image>
+	</view>
+	
+	<view class="info_choose" style="margin-top:175rpx;">
+		<view class="catalog_name">内存</view>
+		<view class="catalog_items display-flex-row">
+			<text class="catalog_item">128G</text>
+			<text class="catalog_item">64G</text>
+		</view>
+	</view>
+	<view class="borderTop"></view>
+	<view class="catalog_count display-flex-row">
+		<view class="catalog_name">购买数量</view>
+			<view class="count_control display-flex-row">
+				<span class="item_reduce item_btn">-</span>
+				<span class="item_num">1</span>
+				<span class="item_add item_btn">+</span>
+			</view>
+		
+	</view>
+	<view class="borderTop"></view>
+	<view class="btn_area display-flex-row" >
+      <view bindtap="addCart" class="goods_half_half  bg_FF9600">加入购物车</view>
+      <view bindtap="saveOrder" class="goods_half_half  bg_E93D3B">立即购买</view>
+    </view>
+</view>
+
+	<view class="container width100 ">
+	  <view class="tab bg_fff">
+	    <view class="tab-content mgb10rpx">
+	      <view  class="btn right_btn {{select==0?'active':''}}" data-area="0" bindtap="changeArea">商品详情</view>
+	      <view  class="btn left_btn {{select==1?'active':''}}" data-area="1" bindtap="changeArea">商品参数</view>
+	    </view>
+	  </view>
+	  <view wx:if="{{0==select}}">
+	  	513216543121321321313\n41321sd1f23\n
+	  </view>
+	  <view wx:if="{{1==select}}" class="param_area"></view>
+	</view>
+
+
+
+
+
+
+	</view>
+
+
+
+  <view class="footer">
+  	<view class="cartimg">
+  		<image src="/images/cart.png"></image>
+  		<view class="badge-count">2</view>
+  	</view>
+  	<view class="cart">加入购物车</view>
+  	<view class="buy">立即购买</view>
+  </view>
+</view>

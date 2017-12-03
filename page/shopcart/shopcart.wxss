@@ -80,8 +80,6 @@
 	color: #B4B4B4;
 	font-size: 24rpx;
 	margin-top: -34rpx;
-	/*height: 70rpx;*/
-	/*margin-left: 20rpx;*/
 }
 .goods-box .goods .goodsdetails .price{
 	display: flex;
@@ -98,8 +96,6 @@
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin-right: 10rpx;
-	/*border:1px solid lightgray;*/
-	
 }
 .goods-box .goods .goodsdetails .price .number .minus{
 	width: 19px;
@@ -124,9 +120,6 @@
 	border-left: 1px solid #ccc;  
     border-right: 1px solid #ccc;  
 }
-
-
-
 /*footer*/
 .footer{
 	width: 100%;
@@ -138,7 +131,6 @@
 	z-index: 1;
 	display: flex;
 	border-top: 1.5px solid lightgray;
-	/*flex:1;*/
 }
 .footer .settlement{
 	display:flex;
@@ -162,7 +154,6 @@ checkbox{
 	zoom: 50%;
 }
 .footer .settlement .priceandbtn{
-	/*left: 50%;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -170,25 +161,13 @@ checkbox{
 	height: 140rpx;
 }
 .footer .settlement .priceandbtn .btn{
-	/*border-left: 1.5px solid lightgray;*/
-	/*height: 70px;*/
-	/*text-align: center;*/
 	color: #fff;
 	height: 140rpx;
 	font-size: 45rpx;
 	background-color:#E93D3B;
-	/*text-align: center;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
-	/*padding: 3rpx;*/
-
 }
 .footer .settlement .priceandbtn .btn .os{
-	/*margin-top: 20rpx;*/
-	/*text-align: center;*/
 	margin: 10rpx;
 	padding: 20rpx;
 }
-/*.footer .settlement .btn{
-	border-left: 0.5px solid lightgray;
-}*/
+
