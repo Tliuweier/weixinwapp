@@ -8,18 +8,25 @@
 /*head*/
 .storetitle{
 	width: 100%;
-	height: 40rpx;
+	height: 50rpx;
 	border-bottom: 1.5px solid lightgray;
 	padding: 10rpx;
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 10rpx;
 }
-.storetitle checkbox{
-	margin-top: 10rpx;
-	margin-left: 10rpx;
+.storetitle image{
+	margin:0 10rpx;
+	width: 40rpx;
+	height: 40rpx;
 }
 .storetitle .os{
-	margin-left: 15rpx;
+	font-size: 14px;
+	color: #B4B4B4;
+}
+.storetitle .cancel{
+	right: 0;
+	position: absolute;
 }
 /*goods-box*/
 
@@ -28,6 +35,8 @@
 	flex-direction: column;
 }
 .goods-box .dicount{
+	font-size: 26rpx;
+
 	display: flex;
 }
 .goods-box .dicount .dicountleft{
@@ -35,12 +44,14 @@
 	padding: 15rpx;
 }
 .goods-box .dicount .dicountright{
+	color: #E93D3B;
 	padding: 15rpx;
 }
 .goods-box .goods{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-bottom: 10rpx;
 }
 .goods-box .goods .goodsdetails{
 	display: flex;
@@ -48,12 +59,17 @@
 	justify-content: center;
 	align-items: center;
 }
-.goods-box .goods checkbox{
-	margin:0 30rpx;
+.goods-box .goods icon{
+	
+	
+	margin:0 10rpx;
+
 }
+
+
 .goods-box .goods .goodsdetails image{
-	width: 200rpx;
-	height: 230rpx;
+	width: 180rpx;
+	height: 160rpx;
 	padding: 10rpx;
 }
 .goods-box .goods .goodsdetails .goodstitle{
@@ -80,13 +96,16 @@
 	color: #B4B4B4;
 	font-size: 24rpx;
 	margin-top: -34rpx;
+	margin-bottom:20rpx;
 }
 .goods-box .goods .goodsdetails .price{
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 10rpx;
 }
 .goods-box .goods .goodsdetails .price .os{
 	flex: 1;
+	color:#E93D3B;
 }
 .goods-box .goods .goodsdetails .price .number{
 	display: flex;
@@ -104,13 +123,16 @@
 	float: left;
 	color: #ccc;
 }
+.goods-box .goods .goodsdetails .price .number .active{
+	color: #000;
+}
 .goods-box .goods .goodsdetails .price .number .add{
 	width: 19px;
 	line-height: 26px;
 	text-align: center;
 	float: left;
 }
-.goods-box .goods .goodsdetails .price .number input{
+.goods-box .goods .goodsdetails .price .number .input{
 	width: 40px;
 	height: 26px;
 	float: left;
@@ -119,6 +141,7 @@
 	font-size: 12px;
 	border-left: 1px solid #ccc;  
     border-right: 1px solid #ccc;  
+    line-height: 2.2;
 }
 /*footer*/
 .footer{
@@ -144,14 +167,11 @@
 	flex-direction: column;
 	padding: 25rpx;
 }
-.footer .settlement .checkboxitem checkbox{
-	margin: 5rpx;
+.footer .settlement .checkboxitem icon{
+	margin-left: -10rpx;
 }
 .footer .settlement .checkboxitem .checktitle{
 	margin: 0rpx -15rpx;
-}
-checkbox{
-	zoom: 50%;
 }
 .footer .settlement .priceandbtn{
 	display: flex;
@@ -160,14 +180,38 @@ checkbox{
 	align-items: center;
 	height: 140rpx;
 }
+.display_flex_column{
+	display: flex;
+	flex-direction: column;
+}
+.Toright{
+	/*flex:1;*/
+	/*position: absolute;*/
+	/*position: relative;*/
+	/*right: 0rpx;*/
+	color: #E93D3B;
+}
+.color_fff{
+	font-size: 26rpx;
+	color: #B4B4B4;
+}
 .footer .settlement .priceandbtn .btn{
 	color: #fff;
 	height: 140rpx;
 	font-size: 45rpx;
-	background-color:#E93D3B;
+	background-color:#B4B4B4;
 }
+.footer .settlement .priceandbtn .active{
+	background-color: #E93D3B;
+}
+
 .footer .settlement .priceandbtn .btn .os{
 	margin: 10rpx;
 	padding: 20rpx;
+}
+.cart-no-data{
+	padding:40rpx 0;
+    color: #999;
+    text-align: center;
 }
 

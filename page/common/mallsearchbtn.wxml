@@ -1,0 +1,6 @@
+<view>
+	<view>
+		<icon type="search" size="16" color="#B1B1B1"></icon>
+		<view></view>
+	</view>
+</view>

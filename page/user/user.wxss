@@ -10,3 +10,7 @@
   margin: 20rpx;
   border-radius: 50%;
 }
+.animation{
+	font-size: 16px;
+	color: #1AAD19;
+}

@@ -27,13 +27,13 @@
 
 
 .btngroup{
-	/*position: fixed;*/
-	/*top:100rpx;*/
+	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	background-color: #FFFFFF;
+	width: 100%;
 	border-bottom: 1px solid #E0E0E0;
 }
 .btngroup view{

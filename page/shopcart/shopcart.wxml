@@ -1,182 +1,82 @@
 <view class="container">
 	<view class="post">
-		<scroll-view scroll-y="true">
-			<view class="backcolor">
-				<view class="storetitle">
-					<checkbox />
-					<view class="os">JD 京东自营</view>
-				</view>
-				
-					<view class="goods-box">
-						<view class="dicount">
-							<view class="dicountleft">已购满19.00元，可领取赠品1件</view>
-							<view class="dicountright">领取赠品></view>
-						</view>
-						<view class="goods">
-							<checkbox />
-							<view class="goodsdetails">
-								<image src="/images/touxiang.jpg"></image>
-								<view class="goodstitle">
-									<text class="goodsname">小米 红米 4X 全网通版 3GB\n+32GB磨砂黑 移动联通电信4G手机</text>
-									<!--<text>1213</text> -->
-									<text class="standard">
-										重量：0.270kg;规格：磨砂黑，3GB 32GB
-									</text>
-									<view class="price">
-										<text class="os">￥899</text>
-										<view class="number">
-											<view class="minus">-</view>
-											<input type="number" value="1" />
-											<view class="add">+</view>
-										</view>
-									</view>
-									
-								</view>
+		<view wx:if="{{hasList}}">
+			<scroll-view scroll-y="true">
+				<bolck wx:for="{{storelist}}">
+					<view class="backcolor" data-storeid="{{item.storeid}}">
+							<view class="storetitle">
+								<icon wx:if="{{item.selected}}" type="success" color="#E93D3B" size="16" data-index="{{index}}" catchtap="catchSelect" />
+								<icon wx:else type="circle"  size="16" catchtap="catchSelect" data-index="{{index}}" />
+								<!-- <checkbox catchtap="catchSelect" data-index="{{index}}" checked="{{item.selected}}"/> -->
+								<image src="../../images/shop.png"></image>
+								<view class="os">{{item.storename}}</view>
+								<image class="cancel" src="/images/delete.png" data-index="{{index}}" catchtap="catchdelete"></image>
 							</view>
-						</view>
-						<!-- <view class="promotion">
-							<text>促销 满19.00得赠品，赠完即止</text>
-							<text>4个可选> </text>
-						</view> -->
-					</view>
-					
-			</view>
-			<view class="backcolor">
-				<view class="storetitle">
-					<checkbox />
-					<view class="os">JD 京东自营</view>
-				</view>
-				
-					<view class="goods-box">
-						<view class="dicount">
-							<view class="dicountleft">已购满19.00元，可领取赠品1件</view>
-							<view class="dicountright">领取赠品></view>
-						</view>
-						<view class="goods">
-							<checkbox />
-							<view class="goodsdetails">
-								<image src="/images/touxiang.jpg"></image>
-								<view class="goodstitle">
-									<text class="goodsname">小米 红米 4X 全网通版 3GB\n+32GB磨砂黑 移动联通电信4G手机</text>
-									<!--<text>1213</text> -->
-									<text class="standard">
-										重量：0.270kg;规格：磨砂黑，3GB 32GB
-									</text>
-									<view class="price">
-										<text class="os">￥899</text>
-										<view class="number">
-											<view class="minus">-</view>
-											<input type="number" value="1" />
-											<view class="add">+</view>
-										</view>
+							
+								<view class="goods-box">
+									<view class="dicount">
+										<view class="dicountleft">{{item.fullcut}}</view>
+										<view class="dicountright">领取赠品></view>
 									</view>
-									
-								</view>
-							</view>
-						</view>
-						<!-- <view class="promotion">
-							<text>促销 满19.00得赠品，赠完即止</text>
-							<text>4个可选> </text>
-						</view> -->
-					</view>
-					
-			</view>	
-			<view class="backcolor">
-				<view class="storetitle">
-					<checkbox />
-					<view class="os">JD 京东自营</view>
-				</view>
-				
-					<view class="goods-box">
-						<view class="dicount">
-							<view class="dicountleft">已购满19.00元，可领取赠品1件</view>
-							<view class="dicountright">领取赠品></view>
-						</view>
-						<view class="goods">
-							<checkbox />
-							<view class="goodsdetails">
-								<image src="/images/touxiang.jpg"></image>
-								<view class="goodstitle">
-									<text class="goodsname">小米 红米 4X 全网通版 3GB\n+32GB磨砂黑 移动联通电信4G手机</text>
-									<!--<text>1213</text> -->
-									<text class="standard">
-										重量：0.270kg;规格：磨砂黑，3GB 32GB
-									</text>
-									<view class="price">
-										<text class="os">￥899</text>
-										<view class="number">
-											<view class="minus">-</view>
-											<input type="number" value="1" />
-											<view class="add">+</view>
+									<bolck wx:for="{{item.goods}}" wx:for-index="idx" wx:for-item="itemName" data-goodsid="{{itemName.goodsid}}">
+										<view class="goods">
+											<icon wx:if="{{itemName.selected}}" type="success" color="#E93D3B" size="16"  data-index="{{idx}}"  data-parent-index="{{index}}" catchtap="catchSelectgoods" />
+											<icon wx:else type="circle"  size="16" data-index="{{idx}}"  data-parent-index="{{index}}" catchtap="catchSelectgoods"/>
+											<view class="goodsdetails">
+												<image src="{{itemName.imageurl}}"></image>
+												<view class="goodstitle">
+													<text class="goodsname">{{itemName.goodsname}}</text>
+													<!--<text>1213</text> -->
+													<text class="standard">
+														{{itemName.specifications}}
+													</text>
+													<view class="price">
+														<text class="os">￥{{itemName.price}}</text>
+														<view class="number">
+															<view class="minus {{itemName.num>1? 'active':''}}" catchtap="minuscount" data-index="{{idx}}"  data-parent-index="{{index}}">-</view>
+															<text class="input">{{itemName.num}}</text>
+															<view class="add" catchtap="addcount" data-index="{{idx}}"  data-parent-index="{{index}}">+</view>
+														</view>
+													</view>
+													
+												</view>
+											</view>
 										</view>
-									</view>
-									
+									</bolck>
 								</view>
-							</view>
-						</view>
-						<!-- <view class="promotion">
-							<text>促销 满19.00得赠品，赠完即止</text>
-							<text>4个可选> </text>
-						</view> -->
-					</view>
-					
-			</view>	
-			<view class="backcolor">
-				<view class="storetitle">
-					<checkbox />
-					<view class="os">JD 京东自营</view>
-				</view>
+							
+					</view>		
+				</bolck>
 				
-					<view class="goods-box">
-						<view class="dicount">
-							<view class="dicountleft">已购满19.00元，可领取赠品1件</view>
-							<view class="dicountright">领取赠品></view>
-						</view>
-						<view class="goods">
-							<checkbox />
-							<view class="goodsdetails">
-								<image src="/images/touxiang.jpg"></image>
-								<view class="goodstitle">
-									<text class="goodsname">小米 红米 4X 全网通版 3GB\n+32GB磨砂黑 移动联通电信4G手机</text>
-									<!--<text>1213</text> -->
-									<text class="standard">
-										重量：0.270kg;规格：磨砂黑，3GB 32GB
-									</text>
-									<view class="price">
-										<text class="os">￥899</text>
-										<view class="number">
-											<view class="minus">-</view>
-											<input type="number" value="1" />
-											<view class="add">+</view>
-										</view>
-									</view>
-									
-								</view>
-							</view>
-						</view>
-						<!-- <view class="promotion">
-							<text>促销 满19.00得赠品，赠完即止</text>
-							<text>4个可选> </text>
-						</view> -->
-					</view>
-					
-			</view>		
-		</scroll-view>
+			</scroll-view>
+		</view>
+		<view wx:else >
+			<view class="cart-no-data">购物车是空的哦~</view>
+		</view>
+		
 	</view>
 	
-		<view class="footer">
+		<view class="footer" wx:if="{{hasList}}">
 			<view class="settlement">
-				<view class="checkboxitem">
-					<checkbox />
+				<view class="checkboxitem" catchtap="catchSelectAll" >
+					<icon wx:if="{{selectAllStatus}}" type="success" color="#E93D3B"  bindtap="selectAll" size="16"/>
+					<icon wx:else type="circle"  bindtap="selectAll" size="16"/>
 					<view class="checktitle">全选</view>
 				</view>
 				<view class="priceandbtn">
-					<text>总计：￥19.00</text>
-					<view class="btn">
-						<view class="os">去结算（0件)</view></view>
+					<view class="display_flex_column">
+						<text class="Toright">总计：￥{{count}}</text>
+						<text class="color_fff">不含运费，已优惠￥0.00</text>
+					</view>
+					
+					<view class="btn {{number>0?'active':''}}" catchtap="catchToOrder">
+						
+					<view class="os">去结算（{{number}}件)</view></view>
 				</view>
 				
 			</view>
 		</view>
+	
+		
 	
 </view>

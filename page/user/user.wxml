@@ -5,4 +5,8 @@
 		<image src="/images/profile.png" bindtap="bindViewTap" class="userinfo-avatar" background-size="cover"></image>
 		<button size="mini" type="primary">登录</button>
 	</view>
+
+
+	<view  animation="{{animationData}}"  class="animation" wx:if="{{status}}">+1</view>
+	<view catchtap="checkin">点击加1</view>
 </view>
