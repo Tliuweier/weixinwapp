@@ -8,9 +8,12 @@
 <br>列表
 ![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/goodslist.jpg)
 <br>详情页
-![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/details.jpg)
-![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/details_info.jpg)
+![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/details.png)
+![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/details_info.png)
 <br>购物车
-![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/shopcart.jpg)
-![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/shopcart1.jpg)
+![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/shopcart.png)
+![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/shopcart1.png)
+<br>如果觉得写的可以的话，支持一下，你们的支持是我的动力。
+<br>
+![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/images/getmoney.jpg)
 
