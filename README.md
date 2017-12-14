@@ -1,6 +1,8 @@
 
 
 在微信web开发者工具打开(仿京东商城跟豆瓣点评写的一个小程序)<br>
+注明：项目中的搜索栏还没完成的，但仿豆瓣的搜索栏写好了。可以参考来写一下。
+重要的流程写完，日后会继续完善剩下的功能。（2017-11-24   ----   2017-12-10）
 <br>首页
 ![](https://raw.githubusercontent.com/Tliuweier/weixinwapp/master/file/index.png)
 <br>分类
