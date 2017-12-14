@@ -41,7 +41,7 @@
 	text-shadow: 1px 1px 0 rgba(0,0,0,.6);
 }
 .Tbutton{
-	/*width: 100%;*/
+	width: 100%;
 	display: flex;
 	background-color: white;
 	/*position: relative;*/

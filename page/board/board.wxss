@@ -41,10 +41,42 @@
 	margin-left: 10rpx;
 	color: #B4B4B4;
 }
+
+
+
+.nicebox{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	/*align-items: center;
+	justify-content: center;*/
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10rpx;
+}
+.box_one{
+	width: 33.33333333%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	height: 150rpx;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+.nicebox .box_one image{
+	width: 80rpx;
+	height:80rpx;
+}
+.nicebox .box_one text{
+	color: #B4B4B4;
+	font-size: 16px;
+}
+
 .btn{
 	background-color: white;
 	display: flex;
-	/*flex-direction: column;*/
+	/*flex-direction: row;*/
 	width: 100%;
 	flex-wrap: wrap;
 
@@ -73,7 +105,7 @@
 }
 .goods{
 	margin-top: 30rpx;
-	background-color: white;
+	/*background-color: #;*/
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -94,9 +126,6 @@
 	color: #B4B4B4;
 }
 .goods .timestep .line{
-	/*width: 100%;*/
-	/*text-align: center;*/
-
 	margin: 16rpx 5rpx 0 5rpx;
 	color: #B4B4B4;
 	height: 1rpx;
@@ -105,7 +134,7 @@
 	margin: 20rpx;
 	display: flex;
 	flex-direction: row;
-
+	background: white;
 	box-shadow: 2px 2px 3px #bbb;
 }
 .goods .logotitle{
@@ -226,29 +255,3 @@
 	margin: 10rpx 0 10rpx 0;
 }
 
-/*.goods .goodslist{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 86%;
-	justify-content: center;
-	border: 1px solid #B4B4B4;
-	height: 100px;
-	margin: auto 0;
-}
-
-.goods .goodslist  image{
-	width: 200rpx;
-	height: 200rpx;
-}
-.goods .goodslist  .goodsText{
-	display: flex;
-	flex-direction: column;
-	/*width: 60%;*/
-/*}
-.goods .goodslist .goodsText .goodstitel{
-	
-	overflow: hidden;
-	white-space: normal;
-	text-overflow: ellipsis;
-}*/

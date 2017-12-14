@@ -58,5 +58,18 @@ Page({
 		this.setData({
 			goodlist:responseData
 		})
+	},
+	onReachBottom(){
+		console.log("上拉")
+		const _this = this;
+		wx.showNavigationBarLoading();
+			// const oldmovielist = _this.data.movie_subjects;
+			// oldmovielist.subjects=oldmovielist.subjects.concat(newmovielist.subjects);
+			let oldlist = _this.data.goodlist;
+			oldlist = oldlist.concat(responseData);
+			_this.setData({
+				goodlist:oldlist
+			})
+		wx.hideNavigationBarLoading();
 	}
 })

@@ -93,6 +93,16 @@ Page({
 			return;
 		}
 		console.log("可以提交订单！")
+		 wx.showToast({
+        		title: '提交订单成功！',
+	       		duration: 5000,
+	       		complete(){
+	       			wx.navigateTo({
+						url:'/page/getmoney/getmoney'
+					})
+	       		}
+	     })
+		
 	},
 	catchdelete(e){
 		let index = parseInt(e.currentTarget.dataset.index);

@@ -54,14 +54,15 @@
 	left: 25%;
 }
 .nav_right .nav_right_item{
+	margin-top: 10rpx;
 	float: left;
 	width: 33.33%;
 	text-align: center;
-	height: 140px;
+	height: 84px;
 }
 .nav_right .nav_right_item image{
-	width: 50px;
-	height: 100px;
+	width: 80rpx;
+	height: 120rpx;
 }
 .nav_right .nav_right_item  text{
 	font-size: 10px;

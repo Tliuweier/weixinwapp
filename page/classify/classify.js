@@ -3,27 +3,39 @@ Page({
 		Curindex:0,
 		checkid:1,
 		list:[{
-			classifytitle:'家用电器',
+			classifytitle:'手机',
 			classifyindex:'1',
 			brand:[{
-				brandimageurl:'/images/note.png',
+				brandimageurl:'/images/apple.png',
 				brandtitle:'Apple',
 				brandindex:'01'
 			},{
-				brandimageurl:'/images/note.png',
+				brandimageurl:'/images/huawei.png',
 				brandtitle:'华为',
 				brandindex:'02'
 			},{
-				brandimageurl:'/images/note.png',
+				brandimageurl:'/images/xiaomi.png',
+				brandtitle:'小米',
+				brandindex:'03'
+			},{
+				brandimageurl:'/images/apple.png',
+				brandtitle:'Apple',
+				brandindex:'01'
+			},{
+				brandimageurl:'/images/huawei.png',
+				brandtitle:'华为',
+				brandindex:'02'
+			},{
+				brandimageurl:'/images/xiaomi.png',
 				brandtitle:'小米',
 				brandindex:'03'
 			}]
 		},{
-			classifytitle:'手机',
+			classifytitle:'家用电器',
 			classifyindex:'2',
 			brand:[{
-				brandimageurl:'/images/note.png',
-				brandtitle:'炒饭',
+				brandimageurl:'/images/midealogo.png',
+				brandtitle:'美的',
 				brandindex:'01'
 			},{
 				brandimageurl:'/images/note.png',

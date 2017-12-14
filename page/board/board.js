@@ -1,41 +1,65 @@
+const responseData = [
+	{issign:1,goodid:17,goodname:'Apple iPhone 7 32GB黑色 移动联通电信4G手机',purchaseprice:89,saleprice:59,goodimg:'../../images/touxiang.jpg',purchase:12},
+	{issign:0,goodid:18,goodname:'Apple iPhone 5 32GB黑色 移动联通电信4G手机',purchaseprice:889,saleprice:229,goodimg:'../../images/swiper1.jpg',purchase:36},
+	{issign:0,goodid:19,goodname:'Apple iPhone 7plus 32GB黑色 移动联通电信4G手机',purchaseprice:120,saleprice:60,goodimg:'../../images/swiper2.jpg',purchase:14},
+	{issign:0,goodid:20,goodname:'Apple iPhone 8 32GB黑色 移动联通电信4G手机',purchaseprice:3000,saleprice:2000,goodimg:'../../images/swiper3.jpg',purchase:45},
+	{issign:1,goodid:21,goodname:'Apple iPhone X 32GB黑色 移动联通电信4G手机',purchaseprice:8399,saleprice:6399,goodimg:'../../images/touxiang.jpg',purchase:89}
+];
 Page({
 	data:{
 		num:'33%',
-		EvenNum:[0,8,14,18,22],
-		hour:new Date().getHours(),
-		nowDate:new Date().toLocaleString(),
-		endDate:'',
-		thours:'**',
-		tminutes:'**',
-		tseconds:'**',
-		tthours:'**',
-		ttminutes:'**',
-		ttseconds:'**',
-		sign:true,
-		tsign:false
-
+		// EvenNum:[0,8,14,18,22],
+		// hour:new Date().getHours(),
+		// nowDate:new Date().toLocaleString(),
+		// endDate:'',
+		// thours:'**',
+		// tminutes:'**',
+		// tseconds:'**',
+		// tthours:'**',
+		// ttminutes:'**',
+		// ttseconds:'**',
+		// sign:true,
+		// tsign:false
+		goodlist:[]
 	},
 	
 	onLoad(){
-
-		if(this.data.hour>=12&&this.data.hour<20){
-			//console.log(123);
-			const tomorrow =this.getTomorrow(1);
-			this.getdate(tomorrow,"12:00:00")
-		}else if(this.data.hour<12){
-
-			const tomorrow =this.getTomorrow(0);
-			this.getdate(tomorrow,"12:00:00")
-		}else if(this.data.hour>20){
-			const tomorrow =this.getTomorrow(1);
-			this.getdate(tomorrow,"12:00:00")
-		}
+		this.setData({
+			goodlist:responseData
+		})
+		// if(this.data.hour>=12&&this.data.hour<20){
+		// 	//console.log(123);
+		// 	const tomorrow =this.getTomorrow(1);
+		// 	this.getdate(tomorrow,"20:00:00")
+		// }else if(this.data.hour<12){
+		// 	const tomorrow =this.getTomorrow(0);
+		// 	this.getdate(tomorrow,"12:00:00")
+		// }else if(this.data.hour>20){
+		// 	const tomorrow =this.getTomorrow(1);
+		// 	this.getdate(tomorrow,"12:00:00")
+		// }
 		
 		// const time =this.getdate();
 		// console.log(time);
 		//console.log(this.getdate())
 		//console.log(new Date("2017-08-12"+" "+"17:30:00"))
 		// if(hour)
+	},
+	onPullDownRefresh(){
+		console.log("下拉")
+	},
+	onReachBottom(){
+		console.log("上拉")
+		const _this = this;
+		wx.showNavigationBarLoading();
+			// const oldmovielist = _this.data.movie_subjects;
+			// oldmovielist.subjects=oldmovielist.subjects.concat(newmovielist.subjects);
+			let oldlist = _this.data.goodlist;
+			oldlist = oldlist.concat(responseData);
+			_this.setData({
+				goodlist:oldlist
+			})
+		wx.hideNavigationBarLoading();
 	},
 	Todetails(e){
 		wx.navigateTo({

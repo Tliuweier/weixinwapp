@@ -10,25 +10,51 @@
 	</view>
 	<view class="btn">
 		<view class="grads">
-			<image class="user-icon" src="/images/note.png"></image>
+			<image class="user-icon" src="/images/youhuiquan.png"></image>
 			<text>领优惠券</text>
 		</view>
 		<view class="grads">
-			<image class="user-icon" src="/images/board.png"></image>
+			<image class="user-icon" src="/images/saoma.png"></image>
 			<text>扫码购物</text>
 		</view>
 		<view class="grads">
-			<image class="user-icon" src="/images/home.png"></image>
+			<image class="user-icon" src="/images/wuliu.png"></image>
 			<text>物流查询</text>
 		</view>
 		<view class="grads" catchtap="ToClassify">
-			<image class="user-icon" src="/images/safari.png"></image>
+			<image class="user-icon" src="/images/fenlei.png"></image>
 			<text>商品分类</text>
 		</view>
 	</view>
+
 	<view class="goods">
 		<text class="logotitle">京东抢购</text>
-		<view class="timestep">
+			<!-- 九宫格 -->
+			<view class="nicebox">
+				<view class="box_one">
+					<image src="../../images/phone.png"></image>
+					<text>手机馆</text>
+				</view>
+				<view class="box_one">
+					<image src="../../images/jiayongdianqi.png"></image>
+					<text>家电馆</text>
+				</view>
+				<view class="box_one">
+					<image src="../../images/more1.png"></image>
+					<text>更多</text>
+				</view>
+				
+			</view>
+			
+
+
+
+
+
+
+
+
+<!-- 		<view class="timestep">
 			<view class="timestep1">
 				<view class="{{sign?'timebtn':'timebtn1'}}" catchtap="changeTime1"><text>12:00</text></view>
 				<text class="timesteptext">即将抢购</text>
@@ -44,70 +70,33 @@
 		<text>距离本场开始</text>
 
 		<text class="Timeout" wx:if="{{sign}}">{{thours}}:{{tminutes}}:{{tseconds}}</text>
-		<text class="Timeout" wx:if="{{tsign}}">{{tthours}}:{{ttminutes}}:{{ttseconds}}</text>
+		<text class="Timeout" wx:if="{{tsign}}">{{tthours}}:{{ttminutes}}:{{ttseconds}}</text> -->
 		<!-- <text>距本场结束</text> -->
-			<view class="goodslist" catchtap="Todetails">
-				<view class="subscript">限量版</view>
-					<image src="/images/test.jpg"></image>
-					<view class="goodsText">
-						<text class="goodstitle">限时抢购秋冬季新款女装韩版高\n领毛衣打底衫麻花套头加厚修身显瘦针织衫 白色 S</text>
-						<text class="sale">￥59.00<text class="del">￥89.00</text></text>
-						
-						<view class="sold">已售<text class="soldnum">33%</text>
-							<view class="Tprogress">
-								<view class="bar" style="width:{{num}}"></view>
+		<text style="color:#B4B4B4;">"最具人气的TOP热销爆款"</text>
+		<block wx:if="{{goodlist}}">
+			<block wx:for="{{goodlist}}">
+				<view class="goodslist" catchtap="Todetails">
+					
+					<view wx:if="{{item.issign==1}}" class="subscript">限量版</view>
+						<image src="{{item.goodimg}}"></image>
+						<view class="goodsText">
+							<text class="goodstitle">{{item.goodname}}</text>
+							<text class="sale">￥{{item.saleprice}}<text class="del">￥{{item.purchaseprice}}</text></text>
+							
+							<view class="sold">已售<text class="soldnum">{{item.purchase}}%</text>
+								<view class="Tprogress">
+									<view class="bar" style="width:{{item.purchase+'%'}}"></view>
+								</view>
+							<!-- <progress percent="33" stroke-width="10" activeColor="#F36466" ></progress> -->
 							</view>
-						<!-- <progress percent="33" stroke-width="10" activeColor="#F36466" ></progress> -->
+							<view class="Tbtn">立即抢购</view>
 						</view>
-						<view class="Tbtn">立即抢购</view>
-					</view>
-			</view>
-			<view class="goodslist">
-					<image src="/images/test.jpg"></image>
-					<view class="goodsText">
-						<text class="goodstitle">限时抢购秋冬季新款女装韩版高\n领毛衣打底衫麻花套头加厚修身显瘦针织衫 白色 S</text>
-						<text class="sale">￥59.00<text class="del">￥89.00</text></text>
-						
-						<view class="sold">已售<text class="soldnum">33%</text>
-							<view class="Tprogress">
-								<view class="bar" style="width:{{num}}"></view>
-							</view>
-						<!-- <progress percent="33" stroke-width="10" activeColor="#F36466" ></progress> -->
-						</view>
-						<view class="Tbtn">立即抢购</view>
-					</view>
-			</view>
-			<view class="goodslist">
-					<image src="/images/test.jpg"></image>
-					<view class="goodsText">
-						<text class="goodstitle">限时抢购秋冬季新款女装韩版高\n领毛衣打底衫麻花套头加厚修身显瘦针织衫 白色 S</text>
-						<text class="sale">￥59.00<text class="del">￥89.00</text></text>
-						
-						<view class="sold">已售<text class="soldnum">33%</text>
-							<view class="Tprogress">
-								<view class="bar" style="width:{{num}}"></view>
-							</view>
-						<!-- <progress percent="33" stroke-width="10" activeColor="#F36466" ></progress> -->
-						</view>
-						<view class="Tbtn">立即抢购</view>
-					</view>
-			</view>
-			<view class="goodslist">
-					<image src="/images/test.jpg"></image>
-					<view class="goodsText">
-						<text class="goodstitle">限时抢购秋冬季新款女装韩版高\n领毛衣打底衫麻花套头加厚修身显瘦针织衫 白色 S</text>
-						<text class="sale">￥59.00<text class="del">￥89.00</text></text>
-						
-						<view class="sold">已售<text class="soldnum">33%</text>
-							<view class="Tprogress">
-								<view class="bar" style="width:{{num}}"></view>
-							</view>
-						<!-- <progress percent="33" stroke-width="10" activeColor="#F36466" ></progress> -->
-						</view>
-						<view class="Tbtn">立即抢购</view>
-					</view>
-			</view>
-			
+				</view>
+			</block>
+		</block>
 			
 	</view>
+			
+			
+	
 </view>
