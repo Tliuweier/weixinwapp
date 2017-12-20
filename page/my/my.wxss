@@ -8,10 +8,10 @@
     height: 400rpx;
 }
 .user-image{
-	margin: 40rpx;
+	margin: 20rpx;
 	width: 200rpx;
-    height: 217rpx;
-    border-radius: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
 }
 .user-nickname{
 	display: flex;
@@ -25,10 +25,11 @@
 	color: #fff;
 }
 .user-sex{
+	
 	margin-left: 20rpx;
 	width: 40rpx;
     height: 40rpx;
-    border-radius: 60rpx;
+    border-radius: 50%;
 }
 .user-location{
 	margin:20rpx;

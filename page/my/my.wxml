@@ -1,12 +1,13 @@
 <view class="container">
-	<view class="user-info" wx:if="{{userinfo}}">
-		<image src="{{userinfo.imgUrl}}" class="user-image"></image>
+	<view class="user-info" wx:if="{{userInfo}}">
+		<image src="{{userInfo.avatarUrl}}" class="user-image"></image>
 		<view class="user-nickname">
 			<view class="user-name">
-				{{userinfo.username}}
-				<image src="/images/profile.png" class="user-sex"></image>
+				{{userInfo.nickName}}
+				<image src="/images/man.png" class="user-sex" wx:if="{{userInfo.gender==1}}"></image>
+				<image src="/images/woman.png" class="user-sex" wx:if="{{userInfo.gender==2}}"></image>
 			</view>
-			<view class="user-location">{{userinfo.province}},{{userinfo.city}}</view>
+			<view class="user-location">{{userInfo.province}},{{userInfo.city}}</view>
 		</view>
 	</view>
 	<view class="Tbutton">
