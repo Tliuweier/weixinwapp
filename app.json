@@ -1,5 +1,6 @@
 {
 	"pages":[
+    
     "page/board/board",
     "page/details/details",
     "page/goodslist/goodslist",
@@ -12,8 +13,8 @@
 		"page/search/search",
 		"page/shopcart/shopcart",
 		"page/list/list",
+		"page/getmoney/getmoney",
 		"page/user/user",
-		
 		"page/classify/classify",
     "page/moviemore/moviemore",
     "page/movieitem/movieitem"
@@ -39,8 +40,8 @@
       "text": "首页"
     },{
       "pagePath": "page/shopcart/shopcart",
-      "iconPath": "images/my_icon.png",
-      "selectedIconPath": "images/my_active_icon.png",
+      "iconPath": "images/cart.png",
+      "selectedIconPath": "images/cart.png",
       "text": "购物车"
     }, {
       "pagePath": "page/my/my",
