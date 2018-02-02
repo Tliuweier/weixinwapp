@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="display-flex-row bg">
+		<view class="font-mg">收件人</view><input class="weui-input"  placeholder="姓名"/>
+	</view>
+	<view class="display-flex-row bg">
+		<view class="font-mg">联系方式</view>
+		<input class="weui-input"  placeholder="手机号码"/>
+	</view>
+	<view class="display-flex-row bg">
+		<view class="font-mg">省</view><input class="weui-input"  placeholder="省份"/>
+	</view>
+	<view class="display-flex-row bg">
+		<view class="font-mg">市</view><input class="weui-input"/>
+	</view>
+	<view class="display-flex-row bg">
+		<view class="font-mg">县</view><input class="weui-input"/>
+	</view>
+	<view class="display-flex-row bg">
+		<view class="font-mg">详细地址</view><input class="weui-input"  placeholder="详细地址需填写楼栋层或房间号信息"/>
+	</view>
+	<button style="align-items: center;margin-top:20rpx;width:90%;" type="warn">确认</button>
+</view>

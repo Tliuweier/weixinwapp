@@ -1,11 +1,14 @@
 {
 	"pages":[
+   
     
     "page/board/board",
     "page/details/details",
     "page/goodslist/goodslist",
     
-    
+    "page/newaddress/newaddress",
+    "page/Address/address",
+    "page/order/order",
     "page/index/index",
     
     "page/my/my",

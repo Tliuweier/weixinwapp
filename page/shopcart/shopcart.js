@@ -3,7 +3,7 @@ const responseData =[
 		selected:false,
 		storeid:'1001',
 		storename:'芭登多伦服饰旗舰店',
-		fullcut:'购满179元，可减10元,',
+		fullcut:'购满179元，可减10元',
 		cutnum:[10,20,30],
 		goods:[
 			{
@@ -98,7 +98,7 @@ Page({
 	       		duration: 5000,
 	       		complete(){
 	       			wx.navigateTo({
-						url:'/page/getmoney/getmoney'
+						url:'/page/order/order'
 					})
 	       		}
 	     })

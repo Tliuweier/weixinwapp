@@ -1,4 +1,5 @@
 .logo{
+	/*background:linear-gradient(to right,#EC3F3E,#FE7057);*/
 	background-color: #E22319;
 	display: flex;
 	flex-direction: column;
@@ -13,6 +14,7 @@
 }
 .logo .searchbtn{
 	display: flex;
+	/*background-color: linear-gradient(to right,#EC3F3E,#FE7057);*/
 	background-color: #E22319;
 	margin-top: 30rpx;
 	height: 80rpx;

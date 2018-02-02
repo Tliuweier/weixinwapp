@@ -1,0 +1,80 @@
+.display-flex-row{
+	display: flex;
+	flex-direction: row;
+	
+}
+.display-flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.address{
+	font-size: 36rpx;
+	background-color: white;
+	height: 140rpx;
+	position: fixed;
+	top:0;
+	width: 100%;
+	border-bottom: 3px solid  #E55F68;
+	align-items: center;
+}
+.address-content{
+	margin: 25rpx 0 0 20rpx;
+}
+.address-detailed{
+	color: #5E5E5E;
+	font-size: 24rpx
+}
+.address-btn{
+	color: #6193D8;
+	border: 1px solid #6193D8;
+	border-radius: 10rpx;
+	margin-right: 20rpx;
+}
+.more{
+	width:48rpx;
+	height:48rpx;
+	margin-right: 10rpx;
+}
+.bg{
+	margin-top: 20rpx;
+	background-color: #FFFFFF;
+}
+.shop-title{
+	margin-top: 10rpx;
+	height: 60rpx;
+	padding: 10rpx 0 0 30rpx;
+	border-bottom: 1px solid RGB(233,233,233);
+}
+.shop-title image{
+	width: 40rpx;height: 40rpx;
+	margin: 0 20rpx 0 0 ;
+}
+.shop-orders{
+	margin:20rpx 0 10rpx 30rpx;
+	border-bottom: 1px solid RGB(233,233,233);
+
+}
+.shop-orders image{
+	width: 180rpx;
+	height: 180rpx;	
+	margin-right: 20rpx;
+	margin-bottom: 10rpx;
+
+}
+.good-title{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 500rpx;
+}
+.ft-color{
+	color: #B4B4B4;
+	font-size: 25rpx;
+}
+.ft-red{
+	color: #E93D3B;
+}
+.shop-footer{
+	margin-left: 30rpx;
+	align-items: center;
+}

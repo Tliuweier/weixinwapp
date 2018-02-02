@@ -1,0 +1,122 @@
+<view class="container">
+	<view class="display-flex-row address" style="justify-content: space-between;" bindtap="toAddress">
+		<bolck wx:if="{{orderList.address}}">
+				<view  class="display-flex-column address-content">
+					谭锦威 131****7837
+					<view class="display-flex-row address-detailed">
+						<view class="address-btn">谭锦威 广东</view> 
+						<view style="width:500rpx;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;">
+							广东省佛山市顺德区北滘镇碧桂园总部大楼4561231321321232312312312312563213212313212313213213
+						</view>
+					</view>
+				</view>	
+		</bolck>
+		
+		<view wx:else style="align-items:center;margin-left:50rpx;">
+				新增收货地址
+			</view>
+		<view class="image-more">
+			<image class="more" src="/images/more.png" />
+		</view>
+		
+	</view>
+	<view style="margin-top:190rpx;">
+		<bolck wx:for="{{orderList.shops}}">
+			<view class="display-flex-column bg">
+				<view class="display-flex-row shop-title" style="font-weight:700;">
+					<image  src="../../images/shop.png" /> {{item.shopTitle}}</view>
+
+					<bolck wx:for="{{item.goods}}" wx:for-item="itemName">
+						<view class="shop-orders display-flex-row">
+							<image  src="../../images/test.jpg"></image>
+							<view class="display-flex-column">
+								<view class="good-title" style="font-weight:700;">{{itemName.goodTitle}}
+								</view>
+								<view class="ft-color" style="margin-top:15rpx;">{{itemName.specifications}}</view>
+								<view class="display-flex-row " style="justify-content:space-between;margin-top:15rpx;">
+									<view class="ft-red">￥{{itemName.price}}</view>
+									<view style="margin-right:1rpx;">×{{itemName.num}}</view>
+								</view>
+								<view class="ft-color" style="margin-top:15rpx;"><icon type="success_no_circle" size="15" color="RGB(233,233,233)" />支持7天无理由退货   \n<icon type="info_circle" size="15" color="RGB(233,233,233)" style="padding:5rpx;" bindtap="showprice" />价格说明</view>
+							</view>
+						</view>
+					</bolck>
+				
+
+
+				<view class="display-flex-row shop-footer">
+					<view class="display-flex-column" style="width:150rpx;">
+						<text style="margin:10rpx 0;">配送方式</text>
+						<text style="color:#B4B4B4;font-size:26rpx;"> 中小件</text>
+					</view>
+					<view class="display-flex-column" style="width:600rpx;">
+						<view class="display-flex-row" style="margin:10rpx 0;justify-content:space-between;">
+							<view></view>
+							<text >京东快递</text>
+						</view>
+						
+						<view class="display-flex-row" style="font-size:24rpx;justify-content:space-between;">
+							<view></view>【京准达】送货时间：1月23日周二09：00-11：00
+						</view>					
+					</view>
+					<image style="" class="more" src="/images/more.png" />
+				</view>
+			</view>
+
+		</bolck>
+		
+		
+	</view>
+	<view class="bg">
+		<view class="display-flex-row" style="height:100rpx;justify-content:space-between;border-bottom: 1px solid RGB(233,233,233);align-items: center;margin-left:30rpx;">
+			发票信息
+			<view class="display-flex-row ft-color">
+				个人(普通发票)商品明细
+				<image  class="more" src="/images/more.png" />
+			</view>		
+		</view>
+		<view class="display-flex-row" style="height:100rpx;justify-content:space-between;border-bottom: 1px solid RGB(233,233,233);align-items: center;margin-left:30rpx;">
+			京东券
+			<view class="display-flex-row ft-color">
+				无可用
+				<image  class="more" src="/images/more.png" />
+			</view>
+		</view>
+		<view class="display-flex-row" style="height:100rpx;justify-content:space-between;border-bottom: 1px solid RGB(233,233,233);align-items: center;margin-left:30rpx;">
+			京东卡/E卡
+			<view class="display-flex-row ft-color">
+				无可用
+				<image  class="more" src="/images/more.png" />
+			</view>
+		</view>
+		<view class="display-flex-row" style="height:100rpx;justify-content:space-between;align-items: center;margin-left:30rpx;height:140rpx;">
+			京豆
+			<view class="display-flex-row">
+				<view class="display-flex-column">
+				
+					<view class="display-flex-row ft-color" style="justify-content:space-between">
+						<view></view>共166个，可用0个
+					</view>
+					<view class="display-flex-row" style="justify-content:space-between">
+						<view class="ft-red">未满1000，暂不可使用</view>
+					</view>
+				</view>
+				<icon bindtap="showInvcode" type="info_circle" size="15" color="black" style="margin:0 10rpx;" />
+			</view>
+		</view>
+	</view>
+
+	<view class="bg" style="height:100%;">
+		
+			<view class="display-flex-column" style="border-bottom: 1px solid RGB(233,233,233);margin-top:10rpx;">
+				<view class="display-flex-row" style="justify-content:space-between;margin:0 10rpx 0 30rpx;">商品金额<view class="ft-red">￥{{orderList.total}}</view></view>
+				<view class="display-flex-row" style="justify-content:space-between;margin:0 10rpx 0 30rpx;">运费<view class="ft-red">+￥{{freight}}</view></view>
+				<view class="display-flex-row" style="justify-content:space-between;margin:0 10rpx 0 30rpx;">优惠券<view class="ft-red">-￥0.00</view></view>
+				<view class="display-flex-row" style="justify-content:space-between;margin:0 10rpx 0 30rpx;">京东卡/E卡<view class="ft-red">-￥0.00</view></view>
+			</view>
+			<view class="display-flex-row" style="justify-content:space-between;font-size:36rpx;margin:10rpx 10rpx 10rpx 0;"><view></view><view class="display-flex-row">实付金额：<view class="ft-red">￥{{paynum}}</view></view></view>
+		
+		<button type="primary" style="align-items: center;margin-bottom:20rpx;width:90%;">微信支付</button>
+		<button type="default" style="align-items: center;margin-bottom:20rpx;width:90%;">货到付款</button>
+	</view>
+</view>

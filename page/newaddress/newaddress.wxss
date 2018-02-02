@@ -1,0 +1,23 @@
+.display-flex-row{
+	display: flex;
+	flex-direction: row;
+	
+}
+.display-flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.bg{
+	background-color: #FFFFFF;
+	height: 80rpx;
+	align-items: center;
+	border-bottom: 1px solid RGB(233,233,233);
+}
+.font-mg{
+	font-size: 30rpx;
+	color: #B4B4B4;
+	margin: 0 50rpx 0 20rpx;
+}
+.bg  input{
+	width: 75%;
+}

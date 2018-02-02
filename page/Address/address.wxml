@@ -1,0 +1,26 @@
+<view class="container">
+	
+
+	<view  class="post">
+
+		<bolck wx:for="{{addressList}}">
+			<view class="display-flex-row bg">
+				 <icon data-index="{{index}}" wx:if="{{item.default}}" class="icon_small" type="success" size="20" bindtap="changeSelect"></icon>
+				 <icon  data-index="{{index}}" wx:else  class="icon_small" type="circle" size="20" bindtap="changeSelect"></icon>
+				 <view class="display-flex-column">
+				 	<view style="font-size:36rpx;font-weight:700;">{{item.name}}  {{item.phone}}</view>
+				 	<view class="display-flex-row" style="font-size:28rpx;width:580rpx;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;">
+				 		<view class="address-btn">{{item.name}} {{item.province}}</view> {{item.province}}{{item.city}}{{item.area}}{{item.detailedAddress}}
+				 	</view>
+				 </view>
+				 <text class="ft-red">编辑</text>
+			</view>
+		</bolck>
+		
+		
+	</view>
+	
+	<view class="footer">
+		<view class="footer-mg" bindtap="toNewAddress">新增收货地址</view>
+	</view>
+</view>
